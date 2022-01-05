@@ -8,9 +8,9 @@ int ch,m,n;
 int a[10],b[10],i;
 while(ch==0)
   {
-    printf("\nEnter your choice :");
     printf("\n1. linear search");
     printf("\n2. binary search");
+    printf("\nEnter your choice :");
     scanf("\n%d",&ch);
     switch(ch)
     {
@@ -71,8 +71,8 @@ void binarysearch(int b[],int n)
      else
      {
       last=mid-1;
+      }
       mid=(beg+last)/2;
-     }
     }
     if(num==b[mid])
         printf("%d found at position %d\n",num,mid+1);
